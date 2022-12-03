@@ -7,6 +7,7 @@ rps_list = [x.strip() for x in rps_list]
 print(len(rps_list))
 moves = [rps_list[x:x+1] for x in range(0, len(rps_list))]
 
+#part 1, present the possible cases for rps
 # def turn(move):
 #     #print(move)
 #     match move:
@@ -29,6 +30,7 @@ moves = [rps_list[x:x+1] for x in range(0, len(rps_list))]
 #         case ['C Z']:    
 #             return [3,3] 
 
+#part 2
 def turn(move):
     #print(move)
     match move:
@@ -53,9 +55,7 @@ def turn(move):
 
 total_score = 0
 for x in moves:
-    #print(x)
     score = sum(turn(x))
-    #print(score)
     total_score = total_score + score   
 print(total_score)
         
