@@ -52,9 +52,11 @@ for items in directions:
     final_loc = int(items[5])-1
     print(final_loc)
 
+    #for part 1
     #for i in range(quantity):
     #    big_list[final_loc].append(big_list[init_loc].pop())
 
+    #for part 2
     print(big_list)
     chunk = big_list[init_loc][-1*quantity:]
     del big_list[init_loc][-1*quantity:]
